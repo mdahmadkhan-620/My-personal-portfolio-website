@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmad Khan | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0d1117;
+      --bg-light: #f5f5f5;
+      --text-dark: #ffffff;
+      --text-light: #000000;
+      --primary: #00BFFF;
+    }
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      transition: all 0.3s ease;
+    }
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-dark);
+    }
+    body.light {
+      background-color: var(--bg-light);
+      color: var(--text-light);
+    }
+    header {
+      padding: 2rem; display: flex; justify-content: space-between; align-items: center;
+    }
+    .theme-toggle {
+      cursor: pointer; font-size: 1.5rem;
+    }
+    .hero {
+      text-align: center; padding: 2rem;
+    }
+    .hero img {
+      width: 150px; height: 150px; border-radius: 50%; object-fit: cover;
+    }
+    .hero h1 { font-size: 2rem; margin-top: 1rem; }
+    .hero p { font-size: 1rem; color: var(--primary); }
+
+    section {
+      padding: 2rem;
+    }
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background-color: rgba(255,255,255,0.05);
+      padding: 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    .contact a {
+      display: inline-block;
+      margin: 0.5rem;
+      color: var(--primary);
+      text-decoration: none;
+    }
+    footer { text-align: center; padding: 1rem; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Ahmad Khan</h2>
+    <div class="theme-toggle" onclick="toggleTheme()">
+      <i class="fas fa-adjust"></i>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img src="Web_Photo_Editor.jpg" alt="Ahmad Khan">
+    <h1>Ahmad Khan</h1>
+    <p>1st Year BTech Student | Aspiring Software Developer</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">
+        <h3>Languages</h3>
+        <p>C, C++, Python (basicSQL)</p>
+      </div>
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>HTML, CSS, JavaScript, Git, GitHub</p>
+      </div>
+      <div class="card">
+        <h3>Tools</h3>
+        <p>VS Code, CodeSandbox</p>
+      </div>
+      <div class="card">
+        <h3>Soft Skills</h3>
+        <p>Communication, Time Management, Problem Solving</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Dummy Project 1</h3>
+        <p>A simple calculator built using HTML, CSS & JS.</p>
+      </div>
+      <div class="card">
+        <h3>Dummy Project 2</h3>
+        <p>My own portfolio website design & layout.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:ahmadkhankhan6840@gmail.com">ahmadkhankhan6840@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/mdahmadkhan-620" target="_blank">mdahmadkhan-620</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/ahmad-khan-9a8429284" target="_blank">ahmad-khan-9a8429284</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ahmad Khan | Portfolio</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("light");
+    }
+  </script>
+</body>
+</html>
